@@ -24,7 +24,7 @@ public class Tree {
             } else {                               // if param key is greater than current Node's key value
                 current = current.rightChild;      // take right path to check right child Node
             }
-            if (current == null) {.                // key has not been found, return's null 
+            if (current == null) {                 // key has not been found, return's null 
                 return null;
             }
         }
