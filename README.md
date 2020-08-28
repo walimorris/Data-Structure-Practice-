@@ -1,2 +1,2 @@
-# Data-Structure-Practice-
+# Data-Structure-Practice
 Practice implementing data structures 
