@@ -17,18 +17,18 @@ public class Tree {
      * @return A Node which holds this key. 
      */ 
     public Node find(int key) {
-        Node current = this.root;                  // initialize variable current to root Node  
-        while (current.key != key) {               // while Node searches for key value 
-            if (key < current.key) {               // if param key is less than current Node's key value 
-                current = current.leftChild;       // take left path to check left child Node
-            } else {                               // if param key is greater than current Node's key value
-                current = current.rightChild;      // take right path to check right child Node
+        Node current = this.root;                       // initialize variable current to root Node  
+        while (current.key != key) {                    // while Node searches for key value 
+            if (key < current.key) {                    // if param key is less than current Node's key value 
+                current = current.leftChild;            // take left path to check left child Node
+            } else {                                    // if param key is greater than current Node's key value
+                current = current.rightChild;           // take right path to check right child Node
             }
-            if (current == null) {                 // key has not been found, return's null 
+            if (current == null) {                      // key has not been found, return's null 
                 return null;
             }
         }
-        return current;                            // Node with key's value has been found, return this Node 
+        return current;                                 // Node with key's value has been found, return this Node 
     }
 
     public void insert(int key, String data) {
